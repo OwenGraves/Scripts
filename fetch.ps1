@@ -19,4 +19,3 @@ if ($decision -eq 0) {
 
 }
 }
-Copy-Stylish
