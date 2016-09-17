@@ -9,6 +9,8 @@ set backupdir=$VIM/vimtemp,$VIM,.
 set undodir=$VIM/vimtemp,$VIM,.
 
 inoremap jk <ESC>
+nnoremap ; :
+nnoremap : ;
 syntax on
 
 set diffexpr=MyDiff()
