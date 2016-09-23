@@ -4,3 +4,4 @@ Copy-Item "C:\Program Files\ConEmu\ConEmu.xml" $PSScriptRoot"\ConEmu" -Force -Co
 Copy-item $PROFILE $PSScriptRoot"\Powershell" -Force -Confirm
 echo "Pushing to Git"
 git commit -a -m "Pushed"
+git push
