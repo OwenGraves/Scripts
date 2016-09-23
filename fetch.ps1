@@ -1,6 +1,6 @@
 Copy-Item $PSScriptRoot"\Vim\_vimrc" "~\_vimrc" -Force -Confirm
 Copy-Item $PSScriptRoot"\ConEmu\ConEmu.xml" "C:\Program Files\ConEmu\ConEmu.xml" -Force -Confirm
-Copy-Item $PSScriptRoot"\Powershell\Microsoft.PowerShell_profile.ps1" "~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Force -Confirm
+Copy-Item $PSScriptRoot"\Powershell\Microsoft.PowerShell_profile.ps1" $Profile -Force -Confirm
 
 function Copy-Stylish
 {
