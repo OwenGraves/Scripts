@@ -4,5 +4,8 @@ Copy-Item $env:ConEmuDir"\ConEmu.xml" $PSScriptRoot"\ConEmu" -Force -Confirm
 Copy-item $PROFILE $PSScriptRoot"\Powershell" -Force -Confirm
 echo "Pushing to Git"
 $Time = Get-Date
+Push-Location
+cd $PSScriptRoot
 git commit -a -m "Pushed: $Time"
 git push
+Pop-Location
