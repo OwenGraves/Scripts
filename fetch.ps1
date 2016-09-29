@@ -1,7 +1,8 @@
-echo "Pulling from Git"
+echo "Replacing from Git"
 Push-Location
 cd $PSScriptRoot
-git pull
+git fetch --all
+git reset --hard origin/master
 Pop-Location
 Copy-Item $PSScriptRoot"\Vim\_vimrc" $env:HOME"\_vimrc" -Force -Confirm
 Copy-Item $PSScriptRoot"\ConEmu\ConEmu.xml" $env:ConEmuDir"\ConEmu.xml" -Force -Confirm
