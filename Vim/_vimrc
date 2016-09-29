@@ -52,4 +52,3 @@ function MyDiff()
     let &shellxquote=l:shxq_sav
   endif
 endfunction
-
