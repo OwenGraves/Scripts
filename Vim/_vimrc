@@ -14,14 +14,15 @@ set viminfo+=n$VIM/vimtemp
 let mapleader = "\<Space>"
 :nmap <Leader>l :setlocal number!<CR> 
 :nmap <Leader>o :set paste!<CR>
+:nmap <Leader>q :nohlsearch<CR>
 
 :set incsearch
 :set ignorecase
 :set smartcase
 :set hlsearch
-:nmap \q :nohlsearch<CR>
 
 "TODO map capslock to esc as well
+nmap Y y$
 inoremap jk <ESC>
 nnoremap ; :
 nnoremap \; ;
