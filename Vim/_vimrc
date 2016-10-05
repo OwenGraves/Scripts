@@ -10,8 +10,10 @@ set backupdir=$VIM/vimtemp,$VIM,.
 set undodir=$VIM/vimtemp,$VIM,.
 set viminfo+=n$VIM/vimtemp
 
-:nmap \l :setlocal number!<CR> 
-:nmap \o :set paste!<CR>
+"Mapping Space to Leader
+let mapleader = "\<Space>"
+:nmap <Leader>l :setlocal number!<CR> 
+:nmap <Leader>o :set paste!<CR>
 
 :set incsearch
 :set ignorecase
@@ -19,6 +21,7 @@ set viminfo+=n$VIM/vimtemp
 :set hlsearch
 :nmap \q :nohlsearch<CR>
 
+"TODO map capslock to esc as well
 inoremap jk <ESC>
 nnoremap ; :
 nnoremap \; ;
