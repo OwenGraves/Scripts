@@ -22,6 +22,7 @@ set ignorecase
 set smartcase
 set hlsearch
 
+"TODO rebind 's' (same as cl) and rebind 'S' (same as cc)
 "TODO map capslock to esc as well
 nmap Y y$
 inoremap jk <ESC>
