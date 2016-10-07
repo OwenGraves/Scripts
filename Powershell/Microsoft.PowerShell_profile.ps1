@@ -15,10 +15,7 @@ New-Alias -Name cc -Value Clear-Host
 New-Alias -Name o -Value Clear-Host
 
 function Get-AliasDefinition {
-Param(
-    [string]$item
-)
-Get-Alias -Definition $item
+Get-Alias -Definition @args
 }
 New-Alias -Name gald -Value Get-AliasDefinition
 
