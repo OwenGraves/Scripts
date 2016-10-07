@@ -1,6 +1,4 @@
 Copy-Item $env:HOME"\_vimrc" $PSScriptRoot"\Vim" -Force -Confirm
-$VimInstallPath = 'C:\Program Files (x86)\Vim'
-Copy-Item $VimInstallPath'\vimfiles' $PSScriptRoot"\Vim" -Recurse -Force -Confirm
 #Copy-Item $env:LOCALAPPDATA"\Google\Chrome\User Data\Default\databases\chrome-extension_fjnbnpbmkenffdnngjfgmeleoegfcffe_0" $PSScriptRoot"\Chrome\Stylish" -Recurse -Force -Confirm
 Copy-Item $env:ConEmuDir"\ConEmu.xml" $PSScriptRoot"\ConEmu" -Force -Confirm
 Copy-item $PROFILE $PSScriptRoot"\Powershell" -Force -Confirm
@@ -11,3 +9,21 @@ cd $PSScriptRoot
 git commit -a -m "Pushed: $Time"
 git push
 Pop-Location
+
+function Push-VimMisc
+{
+$VimInstallPath = 'C:\Program Files (x86)\Vim'
+$message  = "Copying vimfiles in $VimInstallPath"
+$question = 'Proceed?'
+
+$choices = New-Object Collections.ObjectModel.Collection[Management.Automation.Host.ChoiceDescription]
+$choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&Yes'))
+$choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentList '&No'))
+
+$decision = $Host.UI.PromptForChoice($message, $question, $choices, 1)
+if ($decision -eq 0) {
+    Copy-Item $VimInstallPath'\vimfiles' $PSScriptRoot"\Vim" -Recurse -Force
+} else {
+
+}
+}
