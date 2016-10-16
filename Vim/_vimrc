@@ -1,9 +1,10 @@
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
+set tsl=0 "Temporary fix for redrawing bugs on scroll
+"source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
 
-set guifont=Consolas:h12
+"set guifont=Consolas:h12
 set shell=powershell
 set directory=$VIM/vimtemp,$VIM,.
 set backupdir=$VIM/vimtemp,$VIM,.
