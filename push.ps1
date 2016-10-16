@@ -1,4 +1,4 @@
-Copy-Item $env:HOME"\_vimrc" $PSScriptRoot"\Vim" -Force -Confirm
+Copy-Item $env:HOME"\.vimrc" $PSScriptRoot"\Vim" -Force -Confirm
 
 function Push-VimMisc
 {

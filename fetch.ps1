@@ -27,7 +27,7 @@ Copy-Item $PSScriptRoot"\Vim\vimfiles" $VimInstallPath -Recurse -Force
 }
 }
 
-Copy-Item $PSScriptRoot"\Vim\_vimrc" $env:HOME"\_vimrc" -Force -Confirm
+Copy-Item $PSScriptRoot"\Vim\.vimrc" $env:HOME"\.vimrc" -Force -Confirm
 Copy-VimMisc
 Copy-Item $PSScriptRoot"\ConEmu\ConEmu.xml" $env:ConEmuDir"\ConEmu.xml" -Force -Confirm
 Copy-Item $PSScriptRoot"\Powershell\Microsoft.PowerShell_profile.ps1" $Profile -Force -Confirm
