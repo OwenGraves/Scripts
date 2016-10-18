@@ -1,5 +1,6 @@
 set nocompatible
-set tsl=0 "Temporary fix for redrawing bugs on scroll
+set tsl=5 "Temporary fix for redrawing bugs on scroll
+set so=3
 "source $VIMRUNTIME/vimrc_example.vim
 "source $VIMRUNTIME/mswin.vim
 "behave mswin
@@ -17,6 +18,11 @@ nmap <Leader>l :setlocal number!<CR>
 nmap <Leader>o :set paste!<CR>
 nmap <Leader>q :nohlsearch<CR>
 nnoremap <Leader>; ;
+map <Leader>w <C-w>
+
+"Splitting
+set splitbelow
+set splitright
 
 set incsearch
 set ignorecase
