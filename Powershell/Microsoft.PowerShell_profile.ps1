@@ -13,6 +13,12 @@ New-Alias -Name v -Value vim
 New-Alias -Name c -Value Clear-Host
 New-Alias -Name cc -Value Clear-Host
 New-Alias -Name o -Value Clear-Host
+New-Alias -Name s -Value Stack
+
+function Get-DirectoryForce {
+ls -force @args
+}
+New-Alias -Name la -Value Get-DirectoryForce
 
 function Get-AliasDefinition {
 Get-Alias -Definition @args
