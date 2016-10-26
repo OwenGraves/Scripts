@@ -635,16 +635,16 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task6" modified="2016-10-26 16:53:40" build="161022">
+				<key name="Task6" modified="2016-10-26 17:00:45" build="161022">
 					<value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="powershell.exe -new_console:a -nologo"/>
+					<value name="Cmd1" type="string" data="powershell.exe -new_console:a:d:C:\Users\Owen\Desktop -nologo"/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task7" modified="2016-10-26 16:53:40" build="161022">
+				<key name="Task7" modified="2016-10-26 17:00:45" build="161022">
 					<value name="Name" type="string" data="{Bash::bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00001142"/>
@@ -654,7 +654,7 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd2" type="string" data="1 - XTermKeys, 2 - BrPaste, 4 - AppCursorKeys"/>
 				</key>
-				<key name="Task8" modified="2016-10-26 16:53:40" build="161022">
+				<key name="Task8" modified="2016-10-26 17:00:45" build="161022">
 					<value name="Name" type="string" data="{Bash::Git bash}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -663,7 +663,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task9" modified="2016-10-26 16:53:40" build="161022">
+				<key name="Task9" modified="2016-10-26 17:00:45" build="161022">
 					<value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -672,7 +672,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task10" modified="2016-10-26 16:53:40" build="161022">
+				<key name="Task10" modified="2016-10-26 17:00:45" build="161022">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -682,10 +682,10 @@
 					<value name="Count" type="long" data="1"/>
 				</key>
 			</key>
-			<key name="Apps" modified="2016-10-26 16:53:40" build="161022">
+			<key name="Apps" modified="2016-10-26 17:00:45" build="161022">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2016-10-26 16:53:40" build="161022">
+			<key name="Colors" modified="2016-10-26 17:00:45" build="161022">
 				<value name="Count" type="long" data="0"/>
 			</key>
 		</key>
