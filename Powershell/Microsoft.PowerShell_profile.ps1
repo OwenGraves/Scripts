@@ -16,7 +16,7 @@ New-Alias -Name o -Value Clear-Host
 New-Alias -Name s -Value Stack
 
 function Get-DirectoryForce {
-ls -force @args
+ls -Force @args
 }
 New-Alias -Name la -Value Get-DirectoryForce
 
@@ -37,3 +37,11 @@ function Set-Path {
     }
 
 }
+
+function Build-Stack {
+    param([string]$x)
+    $projectName = [io.path]::GetFileNameWithoutExtension($PWD)
+    stack build $projectName
+    stack exec $projectName
+}
+New-Alias -Name b -Value Build-Stack
