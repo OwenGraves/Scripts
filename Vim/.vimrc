@@ -12,6 +12,11 @@ set backupdir=$VIM/vimtemp,$VIM,.
 set undodir=$VIM/vimtemp,$VIM,.
 set viminfo+=n$VIM/vimtemp
 
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 "Mapping Space to Leader
 let mapleader = "\<Space>"
 nmap <Leader>l :setlocal number!<CR> 
@@ -19,6 +24,7 @@ nmap <Leader>o :set paste!<CR>
 nmap <Leader>q :nohlsearch<CR>
 nnoremap <Leader>; ;
 map <Leader>w <C-w>
+map <C-w>e :vnew<CR>
 
 "Splitting
 set splitbelow
