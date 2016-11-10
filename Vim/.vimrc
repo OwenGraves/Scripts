@@ -17,6 +17,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set backspace=indent,eol,start
+
 "Mapping Space to Leader
 let mapleader = "\<Space>"
 nmap <Leader>l :setlocal number!<CR> 
@@ -24,7 +26,16 @@ nmap <Leader>o :set paste!<CR>
 nmap <Leader>q :nohlsearch<CR>
 nnoremap <Leader>; ;
 map <Leader>w <C-w>
-map <C-w>e :vnew<CR>
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+
+"TODO rebind 's' (same as cl) and rebind 'S' (same as cc)
+"TODO map capslock to esc as well
+nmap Y y$
+inoremap <silent> <C-S> <C-O> :update<CR>
+noremap <silent> <C-S> :update<CR>
+inoremap jk <ESC>
+nnoremap ; :
+syntax on
 
 "Splitting
 set splitbelow
@@ -34,13 +45,6 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-
-"TODO rebind 's' (same as cl) and rebind 'S' (same as cc)
-"TODO map capslock to esc as well
-nmap Y y$
-inoremap jk <ESC>
-nnoremap ; :
-syntax on
 
 set diffexpr=MyDiff()
 function MyDiff()
