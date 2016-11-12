@@ -1,8 +1,6 @@
 set nocompatible
 set tsl=5 "Temporary fix for redrawing bugs on scroll
 set so=3
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
 "behave mswin
 
 "set guifont=Consolas:h12
@@ -21,12 +19,17 @@ set backspace=indent,eol,start
 
 "Mapping Space to Leader
 let mapleader = "\<Space>"
-nmap <Leader>l :setlocal number!<CR> 
-nmap <Leader>o :set paste!<CR>
+"<Leader>j Commands
+nmap <Leader>jw :set wrap!
+nmap <Leader>jl :setlocal number!<CR> 
+nmap <Leader>jo :set paste!<CR>
+"
+"<Leader>f Commands
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+"
 nmap <Leader>q :nohlsearch<CR>
 nnoremap <Leader>; ;
 map <Leader>w <C-w>
-nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
 
 "TODO rebind 's' (same as cl) and rebind 'S' (same as cc)
 "TODO map capslock to esc as well
