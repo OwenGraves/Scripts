@@ -34,7 +34,7 @@ map <Leader>w <C-w>
 "TODO rebind 's' (same as cl) and rebind 'S' (same as cc)
 "TODO map capslock to esc as well
 nmap Y y$
-inoremap <silent> <C-S> <C-O> :update<CR>
+inoremap <silent> <C-S> <Esc> :update<CR>
 noremap <silent> <C-S> :update<CR>
 inoremap jk <ESC>
 nnoremap ; :
