@@ -26,6 +26,7 @@ echo "Pushing to Git"
 $Time = Get-Date
 Push-Location
 cd $PSScriptRoot
+git status --porcelain
 git commit -a -m "Pushed: $Time"
 git push
 Pop-Location
