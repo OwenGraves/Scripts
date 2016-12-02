@@ -19,10 +19,11 @@ set backspace=indent,eol,start
 
 "Mapping Space to Leader
 let mapleader = "\<Space>"
+nnoremap <Space> <Nop>
 "<Leader>j Commands
-nmap <Leader>jw :set wrap!
-nmap <Leader>jl :setlocal number!<CR> 
-nmap <Leader>jo :set paste!<CR>
+nnoremap <Leader>jw :set wrap!<CR>
+nnoremap <Leader>jl :setlocal number!<CR>
+nnoremap <Leader>jo :set paste!<CR>
 "
 "<Leader>f Commands
 nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
