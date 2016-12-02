@@ -13,6 +13,8 @@ New-Alias -Name c -Value Clear-Host
 New-Alias -Name cc -Value Clear-Host
 New-Alias -Name o -Value Clear-Host
 New-Alias -Name s -Value Stack
+New-Alias -Name pu -Value 'C:\Code\Scripts\push.ps1'
+New-Alias -Name fe -Value 'C:\Code\Scripts\fetch.ps1'
 
 function Get-DirectoryForce {
 ls -Force @args
