@@ -23,7 +23,6 @@ nnoremap <Space> <Nop>
 "<Leader>j Commands
 nnoremap <Leader>jw :set wrap!<CR>
 nnoremap <Leader>jl :setlocal number!<CR>
-nnoremap <Leader>jo :set paste!<CR>
 "
 "<Leader>e Commands
 nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
@@ -38,7 +37,6 @@ nmap Y y$
 nnoremap Q @q
 inoremap <silent> <C-S> <Esc> :update<CR>
 noremap <silent> <C-S> :update<CR>
-inoremap jk <ESC>
 nnoremap ; :
 syntax on
 
@@ -50,33 +48,3 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
-
-set diffexpr=MyDiff()
-function MyDiff()
-  let opt = '-a --binary '
-  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
-  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
-  let arg1 = v:fname_in
-  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
-  let arg2 = v:fname_new
-  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
-  let arg3 = v:fname_out
-  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
-  if $VIMRUNTIME =~ ' '
-    if &sh =~ '\<cmd'
-      if empty(&shellxquote)
-        let l:shxq_sav = ''
-        set shellxquote&
-      endif
-      let cmd = '"' . $VIMRUNTIME . '\diff"'
-    else
-      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
-    endif
-  else
-    let cmd = $VIMRUNTIME . '\diff'
-  endif
-  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3
-  if exists('l:shxq_sav')
-    let &shellxquote=l:shxq_sav
-  endif
-endfunction
