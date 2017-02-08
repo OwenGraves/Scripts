@@ -21,13 +21,13 @@ set backspace=indent,eol,start
 let mapleader = "\<Space>"
 nnoremap <Space> <Nop>
 "<Leader>j Commands
-nnoremap <Leader>jw :set wrap!<CR>
-nnoremap <Leader>jl :setlocal number!<CR>
+nnoremap <Leader>jw :set wrap!<cr>
+nnoremap <Leader>jl :setlocal number!<cr>
 "
 "<Leader>e Commands
-nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
 "
-nmap <Leader>q :nohlsearch<CR>
+nmap <Leader>q :nohlsearch<cr>
 nnoremap <Leader>; ;
 map <Leader>w <C-w>
 
@@ -35,8 +35,8 @@ map <Leader>w <C-w>
 "TODO map capslock to esc as well
 nmap Y y$
 nnoremap Q @q
-inoremap <silent> <C-S> <Esc> :update<CR>
-noremap <silent> <C-S> :update<CR>
+inoremap <silent> <C-S> <Esc> :update<cr>
+noremap <silent> <C-S> :update<cr>
 nnoremap ; :
 syntax on
 
