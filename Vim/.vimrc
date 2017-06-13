@@ -45,6 +45,6 @@ set splitbelow
 set splitright
 
 set incsearch
-set ignorecase
+set infercase
 set smartcase
 set hlsearch

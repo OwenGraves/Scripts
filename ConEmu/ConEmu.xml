@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2016-12-13 10:52:19" build="161022">
+		<key name=".Vanilla" modified="2017-05-26 15:48:14" build="170517">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -341,16 +341,16 @@
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
-			<value name="UseCurrentSizePos" type="hex" data="00"/>
+			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
-			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="324"/>
-			<value name="ConWnd Y" type="long" data="73"/>
-			<value name="LastMonitor" type="string" data="0,0,3200,1700"/>
-			<value name="ConWnd Width" type="dword" data="00000056"/>
-			<value name="ConWnd Height" type="dword" data="00000016"/>
+			<value name="WindowMode" type="dword" data="00000521"/>
+			<value name="ConWnd X" type="long" data="244"/>
+			<value name="ConWnd Y" type="long" data="-24"/>
+			<value name="LastMonitor" type="string" data="0,0,2560,1440"/>
+			<value name="ConWnd Width" type="dword" data="00000055"/>
+			<value name="ConWnd Height" type="dword" data="00000015"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
 			<value name="QuakeAnimation" type="ulong" data="500"/>
@@ -542,7 +542,7 @@
 			<value name="MinimizeOnLoseFocus" type="hex" data="00"/>
 			<value name="DisableFarFlashing" type="hex" data="00"/>
 			<value name="DisableAllFlashing" type="hex" data="01"/>
-			<value name="FindText" type="string" data="setx"/>
+			<value name="FindText" type="string" data="`"/>
 			<value name="FindMatchCase" type="hex" data="00"/>
 			<value name="FindMatchWholeWords" type="hex" data="00"/>
 			<value name="FindTransparent" type="hex" data="01"/>
