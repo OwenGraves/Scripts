@@ -15,6 +15,11 @@ New-Alias -Name o -Value Clear-Host
 New-Alias -Name s -Value Stack
 New-Alias -Name pu -Value 'C:\Code\Scripts\push.ps1'
 New-Alias -Name fe -Value 'C:\Code\Scripts\fetch.ps1'
+New-Alias -Name sss -Value SSH-Alias
+
+function SSH-Alias {
+    ssh ograves@auriga.cs.utexas.edu
+}
 
 function Get-DirectoryForce {
 ls -Force @args
@@ -46,3 +51,9 @@ function Build-Stack {
     stack exec $projectName
 }
 New-Alias -Name b -Value Build-Stack
+
+# Chocolatey profile
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
